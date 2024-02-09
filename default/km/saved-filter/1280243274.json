@@ -1,0 +1,38 @@
+{
+  "$id": "1280243274",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "FAQs on Search - Jobs",
+  "filter": {
+    "entityField": [
+      {
+        "fieldId": "c_activeOnSearch",
+        "searchBool": "TRUE"
+      },
+      {
+        "fieldId": "keywords",
+        "text": {
+          "search": [
+            "career"
+          ],
+          "type": "CONTAINS"
+        }
+      }
+    ],
+    "entityType": [
+      {
+        "entityTypeId": [
+          "faq"
+        ],
+        "type": "IS"
+      }
+    ],
+    "fieldsWithData": [
+      {
+        "fieldId": [
+          "answerV2"
+        ],
+        "type": "ANY"
+      }
+    ]
+  }
+}

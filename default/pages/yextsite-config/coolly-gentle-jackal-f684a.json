@@ -1,0 +1,23 @@
+{
+  "$id": "coolly-gentle-jackal-f684a",
+  "$schema": "https://schema.yext.com/config/pages/yextsite-config/v1",
+  "siteName": "Jobs Search",
+  "repoConfig": "cordially-tasty-goldfish-7c8b7",
+  "siteSettings": {
+    "autoDeploy": true,
+    "autoStage": true,
+    "autoPublish": false,
+    "pullRequestsEnabled": false,
+    "stagingCredentials": {
+      "password": "test",
+      "username": "test"
+    }
+  },
+  "branches": [
+    {
+      "name": "master",
+      "envVars": [],
+      "isProductionBranch": true
+    }
+  ]
+}

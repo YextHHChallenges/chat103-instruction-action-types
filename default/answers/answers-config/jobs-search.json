@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "jobs-search",
+  "name": "Jobs Search",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "faqs": {
+      "entityTypes": [
+        "faq"
+      ],
+      "name": "FAQs",
+      "savedSearchId": "1280243274",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "question": {
+          "semanticTextSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "YEXT"
+    },
+    "jobs": {
+      "entityTypes": [
+        "job"
+      ],
+      "name": "Jobs",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "c_jobDepartment": {
+          "nlpFilter": true
+        },
+        "employmentType": {
+          "nlpFilter": true,
+          "textSearch": true
+        },
+        "keywords": {
+          "phraseMatch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "YEXT"
+    }
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "popularQueriesBlacklistedRegex": [],
+    "universalPrompts": [
+      "Open jobs near me",
+      "What are the perks of working here?",
+      "How do I apply?"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "open jobs in [[c_jobDepartment]]"
+      ]
+    }
+  }
+}

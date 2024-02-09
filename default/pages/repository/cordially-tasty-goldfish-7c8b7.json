@@ -1,0 +1,6 @@
+{
+  "$id": "cordially-tasty-goldfish-7c8b7",
+  "$schema": "https://schema.yext.com/config/pages/repository/v1",
+  "repoUrl": "github.com/big-ol-sandbox/jobs_search_${{businessId}}.com",
+  "templateRepo": "github.com/big-ol-sandbox/jobs_search"
+}

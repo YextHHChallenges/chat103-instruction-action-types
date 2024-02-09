@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.yext.com/config/chat/chat-bot/v1",
+  "$id": "brand-bot",
+  "name": "Brand Bot",
+  "identityContext": "This is a bot that will answer questions about my brand",
+  "initialMessage": "Hi, This is Brand Bot! You can ask me anything about our products and services.",
+  "goals": {
+    "CHIT_CHAT": {
+      "examples": [
+        "How are you doing?",
+        "What\u0027s going on?",
+        "What\u0027s your name?",
+        "Thank you!",
+        "Great"
+      ],
+      "goal": "Engage in a casual conversation with the user. This may also include handling conversation endings, user declining assistance, general emotion expressions, and other potential interruptions.",
+      "instructions": [
+        {
+          "reply": {
+            "instruction": "Reply casually to the user, engaging in cordial conversation.",
+            "mode": "CONVERSATIONAL"
+          }
+        }
+      ]
+    },
+    "privacy-security": {
+      "examples": [
+        "What is your privacy policy?",
+        "Privacy and security information",
+        "What personal information do you collect?",
+        "Where can I read your privacy policy?",
+        "What do you do with the information you collect?"
+      ],
+      "goal": "Privacy and Security",
+      "instructions": [
+        {
+          "reply": {
+            "instruction": "You can read our privacy policy at yext.com/privacy-policy",
+            "mode": "VERBATIM"
+          }
+        }
+      ]
+    }
+  }
+}
